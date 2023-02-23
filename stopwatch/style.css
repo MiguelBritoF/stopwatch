@@ -1,0 +1,145 @@
+
+body.light-mode {
+    color: #333;
+    background-color: #fff;
+    transition: background-color 0.5s ease, color 0.5s ease;
+  }
+
+  body.dark-mode {
+    color: #fff;
+    background-color: #333;
+    transition: background-color 0.5s ease, color 0.5s ease;
+  }
+
+  .stopwatch-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    position: relative;
+  }
+
+  .stopwatch-buttons {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1.5rem;
+  }
+
+  #stopwatch {
+    display: inline-block;
+    padding: 20px 40px;
+    font-size: 2em;
+    font-weight: bold;
+    color: #ffffff;
+    background: #000000;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    position: relative;
+  }
+
+  #stopwatch:before,
+  #stopwatch:after {
+    content: '';
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+  #stopwatch:before {
+    left: 20px;
+    background-color: #ffffff;
+  }
+
+  #stopwatch:after {
+    right: 20px;
+    background-color: #ffffff;
+  }
+
+  button {
+    font-size: 1.5rem;
+    margin-top: 1.5rem;
+    margin-right: 0.5rem;
+    margin-left: 0.5rem;
+    padding: 0.5rem 1rem;
+    border-radius: 0.7rem;
+    color: #fff;
+    border: none;
+    background-color: #000000;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    transition: all 0.3s ease;
+  }
+
+  button:hover {
+    transform: scale(1.1);
+  }
+
+  button:active {
+    transform: scale(0.95);
+  }
+
+  #start,
+  #reset,
+  #pause {
+    margin-bottom: 1.5rem;
+  }
+
+  #dark-mode {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 1.5rem;
+    padding: 0.5rem 1rem;
+    border-radius: 0.7rem;
+    color: #fff;
+    border: none;
+    background-color: #000000;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    transition: all 0.3s ease;
+  }
+
+  #dark-mode:hover {
+    transform: scale(1.1);
+  }
+  
+  button:active {
+    transform: scale(0.95);
+  }
+  #start {
+    margin-bottom: 1.5rem;
+  }
+
+.dark-mode #stopwatch,
+.dark-mode #start,
+.dark-mode #reset,
+.dark-mode #pause {
+    background-color: #fff;
+    color: #000;
+    
+}
+
+.dark-mode #stopwatch:before {
+    left: 20px;
+    background-color: #000000;
+
+  }
+  
+.dark-mode #stopwatch:after {
+    right: 20px;
+    background-color: #000000;
+  }
+
+
+.dark-mode button:hover {
+    background-color: #1d1d1d;
+}
+
+.dark-mode #dark-mode {
+    background-color: #fff;
+    color: #000;
+}
+
+  
